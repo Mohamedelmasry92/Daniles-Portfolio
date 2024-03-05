@@ -1,0 +1,618 @@
+body{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --main-font: 'Montserrat', sans-serif;
+    --second-font: 'Poppins', sans-serif;
+}
+
+#btnUp{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    padding: 10px;
+    display:none;
+    z-index: 999999999999999999;
+    background-color: #111;
+}
+
+#main-nav{
+    transition: all 0.5s;
+}
+.navbar ul li .myActive{
+    color: #fff !important;
+    border-bottom: 2px double white;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgba(250, 250, 250, 0.9);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* NAV */
+.logo{
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: var(--main-font);
+}
+.nav-ul li button{
+    color: #fff;
+    font-family: var(--main-font) !important;
+    position: relative;
+    font-size: 14px;
+}
+.nav-ul li a:hover{
+    color: #fff;
+    border-bottom: 2px double white;
+    
+}
+/* .nav-ul li a::before{
+    position: absolute;
+    content: "";
+    width: 76%;
+    height: 2px;
+    bottom: 8px;
+    background-color: #fff;
+    transition: all 0.7s ease;
+    opacity: 0;
+}
+.nav-ul li a:hover:before{
+    opacity: 1;
+} */
+.nav-ul li{
+    position: relative;
+}
+.nav-white{
+    color: #fff !important;
+    font-family: var(--second-font) !important;
+    line-height: 20px;
+    font-size: 14px;
+    
+}
+/* .nav-line::after{
+    position: absolute;
+    content: "";
+    width: 76%;
+    height: 2px;
+    bottom: 8px;
+    left: 12%;
+    background-color: #fff;
+} */
+
+
+
+/* HEADER */
+header{
+    background-image: url(../images/bg.jpg);
+    /* background-position: center center; */
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+header .layout{
+    background-color: rgba(0, 0, 0, 0.65);
+}
+header .layout .header-content h2{
+    font-size:  3.2rem;
+    font-weight: 800;
+    font-family: var(--main-font);
+    margin-bottom: 10px;
+}
+header .layout .header-content p{
+    font-size:  3.5rem;
+    font-family: var(--main-font);
+}
+header .layout .header-content p::after{
+    content: "";
+    animation-name: typing;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    font-weight: 400;
+}
+.icons .icon-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+@keyframes typing {
+    0%{content: " |";}
+    1%{content: " D|";}
+    2%{content: " De|";}
+    3%{content: " Dev|";}
+    4%{content: " Deve|";}
+    5%{content: " Devel|";}
+    6%{content: " Develo|";}
+    7%{content: " Develop|";}
+    8%{content: " Develope|";}
+    9%{content: " Developer|";}
+    10%{content: " Developer|";}
+    11%{content: " Developer|";}
+    12%{content: " Develope|";}
+    13%{content: " Develop|";}
+    14%{content: " Develo|";}
+    15%{content: " Devel|";}
+    16%{content: " Deve|";}
+    17%{content: " Dev|";}
+    18%{content: " De|";}
+    19%{content: " D|";}
+    20%{content: " |";}
+    21%{content: " |";}
+    22%{content: " D|";}
+    23%{content: " De|";}
+    24%{content: " Des|";}
+    25%{content: " Desi|";}
+    26%{content: " Desig|";}
+    27%{content: " Design|";}
+    28%{content: " Designe|";}
+    29%{content: " Designer|";}
+    30%{content: " Designer|";}
+    31%{content: " Designer|";}
+    32%{content: " Designer|";}
+    33%{content: " Designe|";}
+    34%{content: " Design|";}
+    35%{content: " Desig|";}
+    36%{content: " Desi|";}
+    37%{content: " Des|";}
+    38%{content: " De|";}
+    39%{content: " D|";}
+    40%{content: " |";}
+    41%{content: " |";}
+    42%{content: " |";}
+    43%{content: " L|";}
+    44%{content: " La|";}
+    45%{content: " Lar|";}
+    46%{content: " Larr|";}
+    47%{content: " Larry|";}
+    48%{content: " Larry |";}
+    49%{content: " Larry |";}
+    50%{content: " Larry D|";}
+    51%{content: " Larry Da|";}
+    52%{content: " Larry Dan|";}
+    53%{content: " Larry Dani|";}
+    54%{content: " Larry Danil|";}
+    55%{content: " Larry Danile|";}
+    56%{content: " Larry Daniles|";}
+    57%{content: " Larry Daniles|";}
+    58%{content: " Larry Daniles|";}
+    59%{content: " Larry Daniles|";}
+    60%{content: " Larry Daniles|";}
+    61%{content: " Larry Danile|";}
+    62%{content: " Larry Danil|";}
+    63%{content: " Larry Danil|";}
+    64%{content: " Larry Dani|";}
+    65%{content: " Larry Dani|";}
+    66%{content: " Larry Dan|";}
+    67%{content: " Larry Dan|";}
+    68%{content: " Larry Da|";}
+    69%{content: " Larry Da|";}
+    70%{content: " Larry D|";}
+    71%{content: " Larry D|";}
+    72%{content: " Larry |";}
+    73%{content: " Larry |";}
+    74%{content: " Larry|";}
+    75%{content: " Larry|";}
+    76%{content: " Larr|";}
+    77%{content: " Lar|";}
+    78%{content: " La|";}
+    79%{content: " La|";}
+    80%{content: " L|";}
+    81%{content: " |";}
+    82%{content: " |";}
+    83%{content: " D|";}
+    84%{content: " De|";}
+    85%{content: " Dev|";}
+    86%{content: " Deve|";}
+    87%{content: " Devel|";}
+    88%{content: " Develo|";}
+    89%{content: " Develop|";}
+    90%{content: " Develope|";}
+    91%{content: " Developer|";}
+    92%{content: " Developer|";}
+    93%{content: " Develope|";}
+    94%{content: " Develop|";}
+    95%{content: " Develo|";}
+    96%{content: " Devel|";}
+    97%{content: " Dev|";}
+    98%{content: " De|";}
+    99%{content: " D|";}
+    100%{content: " |";}
+}
+
+
+/* ABOUT-ME */
+.about .image-left{
+    position: relative;
+    padding: 0 0 0 30px;
+}
+.about .image-left::after{
+    content: '';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../Images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.about .text-right h3{
+    font-weight: 800;
+    margin-bottom: 5px;
+    font-family: var(--main-font);
+}
+.about .text-right .para-one{
+    color: #999;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-family: var(--second-font);
+    font-size: 14px;
+}
+.about .text-right .para-two{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    font-family: var(--second-font);
+}
+.about .skills{
+    margin-top: 30px;
+}
+.about .skills .skill{
+    margin-bottom: 30px;
+}
+.about .skills .skill .skills-progress{
+    padding: 12px 10px;
+    border-radius: 5px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 7px rgb(0 0 0 / 15%) inset;
+    position: relative;
+    font-family: var(--second-font);
+}
+.about .skills .skill .skills-progress .skill-content{
+    font-size: 13px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.about .skills .skill .skills-progress span{
+    left: 0;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding: 2px 15px;
+}
+
+.about .buttons .download , .buttons .contact{
+    background-color: #fff;
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all .5s;
+    font-family: var(--second-font);
+}
+.about .buttons .download{
+    background: #1c1c1c;
+    color: #eee;
+}
+.about .buttons .contact{
+    background-color: #fff;
+}
+.about .buttons .download:hover{
+    background-color: #fff;
+    color: #111;
+}
+.about .buttons .contact:hover{
+    background: #1c1c1c;
+    color: #eee;
+}
+
+
+
+/* SERVICES  */
+#services .icon{
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+#services .icon:hover{
+    background-color: #111;
+    color: white;
+    
+}
+#services .hover:hover .icon{
+    background-color: #111;
+    color: white;
+}
+#services p{
+    word-spacing: 2px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    color: #748182;
+    font-family: var(--second-font);
+}
+#services h4{
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: var(--main-font);
+}
+
+
+
+/*  TITLE */
+.title h3{
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+    font-family: var(--main-font);
+}
+.title h3::after{
+    content: '';
+    width: 100%;
+    height: 30px;
+    background-image: url(../Images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+/* PORTFOLIO */
+.cont {
+    overflow: hidden;
+    cursor: pointer;
+}
+.cont .overlay-cont{
+    transition: all 0.5s ease-in-out;
+    width: 96%;
+    height: 96%;
+    top: 4%;
+    left: 2%;
+    opacity: 0;
+}
+.cont:hover .overlay-cont{
+    opacity: 95%;
+    top: 2%;
+}
+.cont .overlay-text{
+    transition: all 0.5s ease-in-out;
+    top: 45%;
+    left: 50%;
+    opacity: 0;
+}
+.cont:hover .overlay-text{
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+}
+.links .link{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links .link:hover{
+    background-color: #fff;
+    color: #111;
+    border: 1px solid #111;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: white !important;
+    color: black !important;
+    border-bottom: 2px solid #111;
+    border-radius: 0;
+}
+.nav-pills .nav-link{
+    color: #222;
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    font-family: var(--second-font);
+    padding: 0px 3px;
+    margin-right: 20px;
+}
+.line-ul li button{
+    color: #fff;
+    font-family: var(--main-font);
+    position: relative;
+    font-size: 14px;
+}
+.line-ul li{
+    position: relative;
+}
+
+
+
+
+/* TESTIMONIALS */
+.testimonials .testi-content p{
+    max-width: 70%;
+    margin: auto;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #748182;
+    word-spacing: 2px;
+    font-family: var(--second-font);
+}
+.testimonials .testi-content h6{
+    font-family: var(--main-font-font);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+}
+.testimonials .testi-content span{
+    font-family: var(--second-font);
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: #D6D6D6  !important;
+    opacity: 1 !important;
+}
+.carousel-indicators .active{
+    background-color: #869791 !important;
+    opacity: 1 !important;
+}
+
+
+
+
+/* AWARDS */
+.awards .award h3{
+    font-weight: 900;
+    font-family: var(--main-font);
+    color: #343434;
+}
+.awards i{
+    color: #343434;
+}
+.awards .award p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    font-weight: 600;
+}
+
+
+
+
+/* Blog */
+.blog .card h6{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 10px;
+    font-family: var(--main-font);
+}
+.blog .card h4{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family: var(--main-font);
+}
+.blog .card .read-more{
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid #333;
+    padding: 0 !important;
+}
+.blog .card{
+    overflow: hidden;
+}
+.blog .card-image{
+    overflow: hidden;
+}
+.blog .card img{
+    transition: all 0.5s ease-in-out;
+}
+.blog .card:hover img{
+    transform: scale(1.2);
+}
+
+
+/* CONTACT */
+.contacts .icon-contact{
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.contacts .contact-text h6{
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: var(--main-font);
+    margin-top: 10px;
+}
+.contacts .contact-text p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    font-family: var(--second-font);
+}
+.contacts .premiem:hover .icon-contact{
+    background-color: #111;
+    color: #fff;
+}
+.contacts .contain-container{
+    width: 70%;
+    margin: auto;
+}
+.contacts form input , .contacts form textarea{
+    /* width: 100%; */
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+.contacts form .contact-button{
+    padding: 10px 40px;
+    background: #1c1c1c;
+    color: #eee;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all .5s;
+    font-family: var(--second-font);
+
+}
+.contacts form .contact-button:hover{
+    background-color: #fff;
+    color: #111;
+    border: 1px solid #111;
+}
+
+
+
+/* FOOTER */
+footer{
+    background: #1c1c1c;
+    padding: 30px;
+}
+footer p{
+    font-size: 13px;
+    word-spacing: 2px;
+    line-height: 1.6;
+    margin: 0;
+    color: #748182;
+    font-family: var(--second-font);
+}
